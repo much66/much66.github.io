@@ -398,7 +398,7 @@ span {
         padding: 2rem 3%;
     }
     section {
-        padding: 10rem 3% 2 rem;
+        padding: 10rem 3% 2rem;
     }
     .services {
         padding-bottom: 7rem;
@@ -445,6 +445,7 @@ span {
     }
     .home-img img {
         width: 70vw;
+        margin-right: 3rem;
         margin-top: 4rem;
     }
     .about {
@@ -452,6 +453,7 @@ span {
     }
     .about-img img {
         width: 70vw;
+        margin-left: 3rem;
         margin-top: 4rem;
     }
     .services h2 {
