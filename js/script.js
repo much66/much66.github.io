@@ -49,9 +49,50 @@ ScrollReveal().reveal('.home-content p,  .about-content', { origin: 'right' })
 
 
 const typed = new Typed('.multiple-text', {
-    strings: ['FrontEnd Developer', 'Web Developer', 'Full Stack Developer'],
+    strings: ['Front-End Developer', 'Back-End Developer', 'Web Designer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true,
 })
+
+function checkForm() {
+    var fullName = document.getElementById("full-name").value;
+    var email = document.getElementById("email").value;
+    var mobileNumber = document.getElementById("number").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    var submitButton = document.getElementById("submit");
+
+    if (fullName && email && mobileNumber && subject && message) {
+        submitButton.disabled = false;
+    } else {
+        submitButton.disabled = true;
+    }
+}
+
+function SendMail() {
+    var fullName = document.getElementById('full-name').value;
+    var email = document.getElementById('email').value;
+    var mobileNumber = document.getElementById('number').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+    var btn = document.getElementById('submit');
+
+    var params = {
+        from_name: fullName,
+        email_id: email,
+        message: message,
+        subject: subject,
+        number: mobileNumber
+    };
+
+    if (fullName && email && mobileNumber && subject && message) {
+        emailjs.send("service_m1jkmdv", "template_w5xojmm", params).then(function(res) {
+            alert("Email berhasil dikirim!");
+        });
+    } else {
+        btn.disabled;
+    }
+}

@@ -84,6 +84,7 @@ section {
     width: 30vw;
     margin-left: 3rem;
     animation: floatImage 4s ease-in-out infinite;
+    filter: drop-shadow(5px 14px 8px var(--text-color));
 }
 
 @keyframes floatImage {
@@ -170,6 +171,7 @@ span {
 .about-img img {
     width: 30vw;
     margin-right: 3rem;
+    filter: drop-shadow(4px 14px 5px var(--text-color));
 }
 
 .heading {
@@ -187,6 +189,7 @@ span {
 }
 
 .about-content p {
+    text-align: justify;
     font-size: 1.5rem;
     margin: 2rem 0 3rem;
 }
