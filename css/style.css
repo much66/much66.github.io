@@ -188,6 +188,15 @@ span {
     font-size: 2.6rem;
 }
 
+#paragraph {
+    transition: 1.5s ease;
+}
+
+#prevButton,
+#nextButton {
+    display: none;
+}
+
 .about-content p {
     text-align: justify;
     font-size: 1.5rem;

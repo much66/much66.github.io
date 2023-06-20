@@ -46,6 +46,73 @@ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact 
 ScrollReveal().reveal('.home-content h1,  .about-img', { origin: 'left' })
 ScrollReveal().reveal('.home-content p,  .about-content', { origin: 'right' })
 
+var strings = [
+    'Halo, Saya adalah seorang web developer dengan keahlian dalam PHP (Laravel, CI4), HTML, CSS (Boostrap). Saya telah mengembangkan berbagai situs web yang responsif dan fungsional menggunakan kerangka kerja Laravel dan CodeIgniter. Dalam setiap proyek, saya selalu berkomitmen untuk menghasilkan kode yang bersih, efisien, dan dapat diperbaiki. Saya percaya bahwa dengan menggunakan kombinasi keterampilan saya, saya dapat menciptakan pengalaman pengguna yang menarik dan intuitif.',
+    'Pengalaman saya dalam HTML, Bootstrap, dan CSS memungkinkan saya untuk merancang tampilan yang menarik dan responsif. Saya selalu memperhatikan desain yang estetis dan tata letak yang baik, sambil memastikan kompatibilitas di berbagai perangkat dan browser. Saya percaya bahwa desain visual yang baik merupakan kunci untuk menciptakan situs web yang mengundang dan memikat pengguna.',
+    'Selain itu, saya memiliki latar belakang dalam pemrograman yang kuat. Saya belajar dasar-dasar pemrograman di kampus dan terus memperdalam ilmu saya secara otodidak melalui berbagai sumber, termasuk video tutorial di YouTube, sumber belajar online, dan eksplorasi di luar perkuliahan. Saya sangat antusias untuk terus mengembangkan keahlian saya dalam JavaScript dan Node.js, serta mengaplikasikan pengetahuan baru saya untuk meningkatkan kualitas dan fungsionalitas situs web yang saya kembangkan.'
+];
+
+var currentIndex = 0;
+var paragraphElement = document.getElementById('paragraph');
+var prevButton = document.getElementById('prevButton');
+var nextButton = document.getElementById('nextButton');
+
+var ptype = new Typed('#paragraph', {
+    strings: [strings[currentIndex]],
+    typeSpeed: 0.001,
+    backSpeed: 0.02,
+    loop: false,
+    showCursor: false,
+    onComplete: function() {
+        showNavigationButtons();
+    }
+});
+
+function showNavigationButtons() {
+    if (currentIndex > 0) {
+        prevButton.style.display = 'inline';
+    }
+
+    if (currentIndex < strings.length - 1) {
+        nextButton.style.display = 'inline';
+    }
+}
+
+function prevParagraph() {
+    if (currentIndex === 0) {
+        return;
+    }
+
+    currentIndex--;
+    ptype.reset();
+    ptype.strings = [strings[currentIndex]];
+    ptype.start();
+
+    nextButton.style.display = 'inline';
+    if (currentIndex === 0) {
+        prevButton.style.display = 'none';
+    }
+}
+
+function nextParagraph() {
+    if (currentIndex === strings.length - 1) {
+
+        return;
+    }
+
+    currentIndex++;
+    ptype.reset();
+    ptype.strings = [strings[currentIndex]];
+    ptype.start();
+
+    prevButton.style.display = 'inline';
+    if (currentIndex === strings.length - 1) {
+        nextButton.style.display = 'none';
+    }
+}
+
+
+startTyping(false);
 
 
 const typed = new Typed('.multiple-text', {
