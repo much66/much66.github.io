@@ -120,10 +120,6 @@ function nextParagraph() {
 }
 
 
-startTyping(false);
-
-
-
 function checkForm() {
     var fullName = document.getElementById("full-name").value;
     var email = document.getElementById("email").value;
@@ -164,3 +160,5 @@ function SendMail() {
         btn.disabled;
     }
 }
+
+startTyping(false);
