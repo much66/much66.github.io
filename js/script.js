@@ -57,6 +57,14 @@ var paragraphElement = document.getElementById('paragraph');
 var prevButton = document.getElementById('prevButton');
 var nextButton = document.getElementById('nextButton');
 
+const typed = new Typed('.multiple-text', {
+    strings: ['Front-End Developer', 'Back-End Developer', 'Web Designer'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true,
+})
+
 var ptype = new Typed('#paragraph', {
     strings: [strings[currentIndex]],
     typeSpeed: 0.001,
@@ -115,13 +123,6 @@ function nextParagraph() {
 startTyping(false);
 
 
-const typed = new Typed('.multiple-text', {
-    strings: ['Front-End Developer', 'Back-End Developer', 'Web Designer'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true,
-})
 
 function checkForm() {
     var fullName = document.getElementById("full-name").value;
