@@ -58,7 +58,7 @@ var prevButton = document.getElementById('prevButton');
 var nextButton = document.getElementById('nextButton');
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Front-End Developer', 'Back-End Developer', 'Web Designer'],
+    strings: ['Data Scientist', 'Data Analyst', 'AI Developer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
