@@ -47,9 +47,9 @@ ScrollReveal().reveal('.home-content h1,  .about-img', { origin: 'left' })
 ScrollReveal().reveal('.home-content p,  .about-content', { origin: 'right' })
 
 var strings = [
-    'Halo, Saya adalah seorang web developer dengan keahlian dalam PHP (Laravel, CI4), HTML, CSS (Boostrap). Saya telah mengembangkan berbagai situs web yang responsif dan fungsional menggunakan kerangka kerja Laravel dan CodeIgniter. Dalam setiap proyek, saya selalu berkomitmen untuk menghasilkan kode yang bersih, efisien, dan dapat diperbaiki. Saya percaya bahwa dengan menggunakan kombinasi keterampilan saya, saya dapat menciptakan pengalaman pengguna yang menarik dan intuitif.',
-    'Pengalaman saya dalam HTML, Bootstrap, dan CSS memungkinkan saya untuk merancang tampilan yang menarik dan responsif. Saya selalu memperhatikan desain yang estetis dan tata letak yang baik, sambil memastikan kompatibilitas di berbagai perangkat dan browser. Saya percaya bahwa desain visual yang baik merupakan kunci untuk menciptakan situs web yang mengundang dan memikat pengguna.',
-    'Selain itu, saya memiliki latar belakang dalam pemrograman yang kuat. Saya belajar dasar-dasar pemrograman di kampus dan terus memperdalam ilmu saya secara otodidak melalui berbagai sumber, termasuk video tutorial di YouTube, sumber belajar online, dan eksplorasi di luar perkuliahan. Saya sangat antusias untuk terus mengembangkan keahlian saya dalam JavaScript dan Node.js, serta mengaplikasikan pengetahuan baru saya untuk meningkatkan kualitas dan fungsionalitas situs web yang saya kembangkan.'
+    'Halo, saya adalah seorang data enthusiast dengan minat yang kuat dalam bidang data science dan data analysis. Ketertarikan saya pada dunia data bermula dari studi independen yang saya lakukan di luar perkuliahan, melalui berbagai sumber belajar seperti kursus online, video tutorial, dan eksplorasi mandiri. Dari sana, saya mulai memahami bagaimana data dapat diolah menjadi informasi yang bernilai untuk pengambilan keputusan.',
+    'Untuk memperluas wawasan dan pengalaman, saya mengikuti berbagai kompetisi data yang menantang kemampuan saya dalam membersihkan, menganalisis, dan memvisualisasikan data secara efektif. Setiap kompetisi menjadi ajang pembelajaran dan penguatan keterampilan teknis saya, termasuk dalam pengolahan data besar dan pembuatan model prediktif.',
+    'Puncak perjalanan akademik saya adalah ketika saya mengangkat topik terkait forecasting saham dalam tugas akhir. Dalam penelitian tersebut, saya mengintegrasikan data historis harga saham dengan analisis sentimen dari berita keuangan untuk meningkatkan akurasi prediksi harga saham menggunakan pendekatan deep learning. Pendekatan ini membuka wawasan saya tentang bagaimana kombinasi antara data kuantitatif dan kualitatif dapat memberikan insight yang lebih holistik dan berdampak dalam dunia keuangan.'
 ];
 
 var currentIndex = 0;
@@ -58,7 +58,7 @@ var prevButton = document.getElementById('prevButton');
 var nextButton = document.getElementById('nextButton');
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Data Scientist', 'Data Analyst', 'AI Developer'],
+    strings: ['Data Scientist', 'Data Analyst', 'AI Engineer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
